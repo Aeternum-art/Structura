@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRUCTURA — Digital Architecture Studio</title>
+    <meta name="description" content="A digital architecture studio designing scalable web systems with structural discipline.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+   <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Progress Indicator -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-inner">
+            <a href="#" class="logo">STRUCTURA</a>
+            
+            <div class="nav-controls">
+                <div class="nav-links">
+                    <a href="#work" class="active">Projects</a>
+                    <a href="#process">Approach</a>
+                    <a href="#systems">Systems</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container-wide">
+            <div class="hero-content">
+                <h1>Digital systems,<br>architected for scale.</h1>
+                <p class="hero-subtitle">We design scalable web infrastructure with structural discipline—building digital foundations that endure beyond trends.</p>
+                <div class="cta-group">
+                    <a href="#work" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn">Start a Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-accent"></div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="philosophy">
+        <div class="container">
+            <span class="section-title">Philosophy</span>
+            <h2 class="section-heading">Building with intention, not decoration</h2>
+            
+            <div class="philosophy-grid">
+                <div class="philosophy-item">
+                    <div class="philosophy-number">01</div>
+                    <h3>Foundations</h3>
+                    <p>We begin with strategic inquiry—understanding business objectives, user needs, and technical constraints to establish a solid conceptual framework.</p>
+                </div>
+                
+                <div class="philosophy-item">
+                    <div class="philosophy-number">02</div>
+                    <h3>Structure</h3>
+                    <p>Design systems that scale. Every component, pattern, and interaction is considered as part of a coherent, maintainable whole.</p>
+                </div>
+                
+                <div class="philosophy-item">
+                    <div class="philosophy-number">03</div>
+                    <h3>Engineering</h3>
+                    <p>Precision in execution. We build with performance, accessibility, and longevity as non-negotiable requirements.</p>
+                </div>
+                
+                <div class="philosophy-item">
+                    <div class="philosophy-number">04</div>
+                    <h3>Continuity</h3>
+                    <p>Digital infrastructure requires ongoing stewardship. We design for evolution, ensuring systems remain resilient over time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selected Work Section -->
+    <section id="work">
+        <div class="container">
+            <span class="section-title">Selected Work</span>
+            <h2 class="section-heading">Systems built for longevity</h2>
+            
+            <div class="work-grid">
+                <a href="#" class="work-item" aria-label="View Meridian Financial Systems case study">
+                    <div class="work-image"></div>
+                    <div class="work-content">
+                        <div class="work-meta">Enterprise Platform / 2024</div>
+                        <h3>Meridian Financial Systems</h3>
+                        <p class="work-description">Comprehensive design system and digital infrastructure for a global financial services platform serving 2M+ users across 47 countries.</p>
+                        <div class="work-tags">
+                            <span class="tag">Design System</span>
+                            <span class="tag">Component Library</span>
+                            <span class="tag">Scalability</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="work-item" aria-label="View Vitalis Patient Portal case study">
+                    <div class="work-image"></div>
+                    <div class="work-content">
+                        <div class="work-meta">Healthcare Platform / 2023</div>
+                        <h3>Vitalis Patient Portal</h3>
+                        <p class="work-description">Patient-centered digital ecosystem with modular architecture, enabling seamless integration across multiple healthcare providers.</p>
+                        <div class="work-tags">
+                            <span class="tag">Accessibility</span>
+                            <span class="tag">Integration</span>
+                            <span class="tag">Privacy</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="work-item" aria-label="View Tessera Marketplace case study">
+                    <div class="work-image"></div>
+                    <div class="work-content">
+                        <div class="work-meta">E-Commerce / 2023</div>
+                        <h3>Tessera Marketplace</h3>
+                        <p class="work-description">Multi-vendor commerce platform with sophisticated inventory management and dynamic pricing infrastructure built for high-volume transactions.</p>
+                        <div class="work-tags">
+                            <span class="tag">Performance</span>
+                            <span class="tag">Architecture</span>
+                            <span class="tag">Scale</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <span class="section-title">Process</span>
+            <h2 class="section-heading">How we build digital structures</h2>
+            
+            <div class="process-timeline">
+                <div class="process-step">
+                    <h3>Survey</h3>
+                    <p>Comprehensive analysis of business requirements, user research, competitive landscape, and technical constraints. We establish clear success metrics and project boundaries.</p>
+                </div>
+                
+                <div class="process-step">
+                    <h3>Define</h3>
+                    <p>Strategic framework development. Information architecture, user flows, content strategy, and technical specifications are documented with precision.</p>
+                </div>
+                
+                <div class="process-step">
+                    <h3>Design</h3>
+                    <p>Visual systems, component libraries, and interaction patterns are crafted. Every element is documented for consistency and reusability.</p>
+                </div>
+                
+                <div class="process-step">
+                    <h3>Construct</h3>
+                    <p>Development with performance, accessibility, and maintainability as core principles. Rigorous testing at every stage ensures structural integrity.</p>
+                </div>
+                
+                <div class="process-step">
+                    <h3>Maintain</h3>
+                    <p>Ongoing optimization, monitoring, and evolution. Digital systems require continuous attention to remain effective and relevant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Systems Section -->
+    <section id="systems" class="design-systems">
+        <div class="container">
+            <span class="section-title">Capability</span>
+            <h2 class="section-heading">Design systems expertise</h2>
+            
+            <div class="systems-grid">
+                <div class="system-card">
+                    <div class="system-icon"></div>
+                    <h3>Design Tokens</h3>
+                    <p>Systematized design decisions—color, typography, spacing, and motion—codified for consistency across platforms and enabling efficient scaling.</p>
+                </div>
+                
+                <div class="system-card">
+                    <div class="system-icon"></div>
+                    <h3>Component Libraries</h3>
+                    <p>Reusable, accessible components built with flexibility and performance. Comprehensive documentation ensures proper implementation.</p>
+                </div>
+                
+                <div class="system-card">
+                    <div class="system-icon"></div>
+                    <h3>Motion Principles</h3>
+                    <p>Purposeful animation systems that enhance usability without distraction. Every transition serves a functional purpose.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <span class="section-title">Testimonials</span>
+            <h2 class="section-heading">What our clients say</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"STRUCTURA transformed our digital infrastructure. Their systematic approach delivered a platform that scales effortlessly with our growing user base."</p>
+                    <div>
+                        <div class="testimonial-author">Sarah Chen</div>
+                        <div class="testimonial-role">CTO, Meridian Financial</div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Working with STRUCTURA was a revelation. They don't just build websites—they architect digital foundations that stand the test of time."</p>
+                    <div>
+                        <div class="testimonial-author">Marcus Rivera</div>
+                        <div class="testimonial-role">Product Director, Vitalis Health</div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The design system they created reduced our development time by 40% while improving consistency across all our digital products."</p>
+                    <div>
+                        <div class="testimonial-author">Elena Petrov</div>
+                        <div class="testimonial-role">Head of Design, Tessera</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Build with us</h2>
+                <p>Let's discuss your digital infrastructure needs. We work with organizations that value long-term thinking and structural excellence.</p>
+                
+                <div class="contact-form">
+                    <div class="form-success" id="formSuccess">
+                        <p>Thank you for your message! We'll get back to you within 24 hours.</p>
+                    </div>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Full Name</label>
+                            <input type="text" id="name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input type="email" id="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="company">Company</label>
+                            <input type="text" id="company" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="message">Project Details</label>
+                            <textarea id="message" class="form-textarea" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-brand">STRUCTURA</div>
+                    <p class="footer-tagline">Designing digital structures that endure.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="#work">Projects</a></li>
+                        <li><a href="#process">Approach</a></li>
+                        <li><a href="#systems">Capabilities</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Design Systems</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Platform Architecture</a></li>
+                        <li><a href="#">Ongoing Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                        <li><a href="#" aria-label="Dribbble">Dribbble</a></li>
+                        <li><a href="#" aria-label="GitHub">GitHub</a></li>
+                        <li><a href="mailto:hello@structura.studio">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 STRUCTURA. All rights reserved.</p>
+                <div>
+                    <a href="#" style="margin-right: 24px;">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
