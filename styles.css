@@ -1070,7 +1070,7 @@ section {
   font-family: var(--font-sans);
   font-size: 16px;
   background: transparent;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--color-white);
   color: var(--text-primary);
   transition: all 0.3s ease;
   border-radius: 2px;
@@ -1250,6 +1250,53 @@ footer {
 
 .dark-mode .footer-bottom {
   border-top-color: var(--border-color);
+}
+
+.footer-links a {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-graphite);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.4s ease;
+}
+
+.dark-mode .nav-footer a {
+  color: var(--color-warm-gray);
+}
+
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-oxide);
+  transition: width 0.4s ease;
+}
+
+.footer-links a:hover {
+  color: var(--white-black);
+}
+
+.dark-mode .footer-links a:hover {
+  color: var(--black-white);
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+.footer-links a.active {
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.dark-mode .footer-links a.active {
+  color: var(--color-black);
 }
 
 /* Animations */
